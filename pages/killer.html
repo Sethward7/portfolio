@@ -1,0 +1,108 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>My Web Page</title>  
+    <style>
+        .class{
+            text-align: center;
+            padding-top: 10%;
+        }
+    </style>
+</head>  
+<body>  
+
+    <div class="class">   
+         <canvas id="purpleGuy" width="400" height="400"></canvas>
+    </div>
+    <canvas id="purpleGuy" width="400" height="400"></canvas>
+    <script>
+        const canvas = document.getElementById('purpleGuy')
+        const context = canvas.getContext('2d');
+
+        
+        var head1Y = 45, head2Y = 50;
+        var eyebrowsY = 75, mouth1 = 105, mouth2 = 100, eyesY = 80;
+        var arm1X = 150, arm1Y = 200;
+        var arm2X = 150, arm2Y = 150;
+        var leg1X = 100, leg1Y = 275;
+        var leg2X = 162, leg2Y = 275;
+        var foot1X = 87, foot1Y = 375;
+        var foot2X = 149, foot2Y = 345;
+        var leg1Height = 100;
+        var leg2Height = 70;
+        var arm1Width = 100;
+        var arm2Width = 150;
+        //purple guy himself
+        function draw(){
+        context.fillStyle = "#7300a0";  
+        context.strokeStyle = "#7300a0";
+         
+         context.clearRect(0, 0, canvas.width, canvas.height);
+          //body
+         context.fillRect(100, 100, 87.5, 175);
+          //head
+          context.fillRect(165, head1Y, 75, 75);
+          context.fillRect(160, head2Y, 85, 65);
+          //arm1
+          context.fillRect(arm1X, arm1Y, arm1Width, 25);
+          //arm2
+          context.fillRect(arm2X, arm2Y, arm2Width, 25);
+          //legs
+          context.fillRect(leg1X, leg1Y, 25, leg1Height);
+          context.fillRect(leg2X, leg2Y, 25, leg2Height);
+          //feet
+          context.fillRect(foot1X, foot1Y, 50, 25);
+          context.fillRect(foot2X, foot2Y, 50, 25);
+          //eyebrows
+          context.fillStyle = "black";
+          context.strokeStyle = "black";
+         context.fillRect(225, eyebrowsY, 25, 10);
+         context.fillRect(190, eyebrowsY, 25, 10);
+          //mouth
+         context.fillRect(190, mouth1, 50, 10);
+         context.fillRect(185, mouth2, 60, 5);
+          //eyes
+          context.fillStyle = "white";
+          context.strokeStyle = "white";
+         context.fillRect(230, eyesY, 12, 10);
+         context.fillRect(195, eyesY, 12, 10);
+        }
+        //The animation
+        function swapFrame(){
+          var temp = leg1Height;
+          leg1Height = leg2Height;
+          leg2Height = temp;
+          var temp2 = arm1Width;
+          arm1Width = arm2Width;
+          arm2Width = temp2;
+          if (foot1Y > foot2Y){
+            foot1Y -= 30;
+            foot2Y += 30;
+            head1Y -= 15;
+            head2Y -= 15;
+            eyebrowsY -= 15;
+            mouth1 -= 15;
+            mouth2 -= 15;
+            eyesY -= 15;
+            draw();
+          }else{
+            foot1Y += 30;
+            foot2Y -= 30;
+            head1Y += 15;
+            head2Y += 15;
+            eyebrowsY += 15;
+            mouth1 += 15;
+            mouth2 += 15;
+            eyesY += 15;
+            draw();
+          }
+         
+        }
+
+        setInterval(swapFrame, 300);
+
+        </script>
+
+</body>  
+</html>  
