@@ -60,3 +60,29 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error("Toggle button with ID 'light-mode-toggle' not found.");
     }
 });
+document.addEventListener('DOMContentLoaded', function () {
+    const userAgent = navigator.userAgent;
+
+    if (userAgent.includes('Edg')) { // Detect Microsoft Edge
+        console.log('User is using Edge browser');
+
+        // Remove all content from the page
+        document.body.innerHTML = '';
+        document.body.style.backgroundColor = 'black';
+
+        // Optionally, display a message
+        const edgeMessage = document.createElement('div');
+        edgeMessage.textContent = 'This site is not supported on Microsoft Edge. Please use a different browser.';
+        edgeMessage.style.color = 'white';
+        edgeMessage.style.textAlign = 'center';
+        edgeMessage.style.fontSize = '2rem';
+        edgeMessage.style.padding = '2rem';
+        document.body.appendChild(edgeMessage);
+    } else if (userAgent.includes('Chrome')) { // Detect Chrome browser
+        console.log('User is using Chrome browser');
+    } else if (userAgent.includes('Firefox')) { // Detect Firefox browser
+        console.log('User is using Firefox browser');
+    } else {
+        console.log('User is not using Edge');
+    }
+});
