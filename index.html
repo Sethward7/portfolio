@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seth Ward's Portfolio - showcasing projects and skills.">
+    <meta name="keywords" content="Seth Ward, Portfolio, Projects, Skills, Web Development">
+    <meta name="author" content="Seth Ward">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/portfolio.js"></script>
+    <title>Seth Ward's Portfolio</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+     <!-- Navigation bar -->
+     <ul class="navbar">
+        <li><a class="active" href="#index"><img src="images/SW.png" alt="Home Icon" class="navbar-icon"></a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+            <a href="projects.html" class="dropbutt">Projects <i class="fa-solid fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="swim.html" target="_blank">WJHS Swim Team </a>
+                <a href="fanpage.html" target="_blank">FanPage</a>
+                <a href="killer.html" target="_blank">Others</a>
+
+            </div>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><button id="light-mode-toggle"><i class="fa-solid fa-sun fa-2xl"></i></button></li>
+    </ul>
+    <!-- Image and text section -->
+     <section class="intro">
+        <div class="image-text-container">
+            <img src="images/sethschoolpic.jpg" alt="Your Image" class="profile-image">
+            <div class="text-box">
+                <h1>Welcome to Seth's Portfolio</h1>
+                <p>Hello! I'm Seth Ward, a student at The Jordan Academy for Technology &amp; Careers (JATC) and West Jordan High School (WJHS). This site is a place I will my past, present and future projects in all things web development.</p>
+            </div>
+        </div>
+     </section>
+ 
+    <!--About me-->
+    <section class="about-me">
+        <div class="image-text-container">
+        
+            <div class="text-box">
+                <h1>A Little Bit About Me</h1>
+                <p>My name is Seth Ward, and I've just started my web development journey. I am finishing up my last year in high school. I have plans to continue web development at Utah Valley Universty (UVU). I swam for four years in high school being the only four year in my graduating class.</p>
+            </div>
+            <img src="images/512pxIcon-sunset_photo_not_found.png" alt="Your Image" class="profile-image">
+        </div>
+        <div class ="image-container">
+            <img src="images/512pxIcon-sunset_photo_not_found.png" alt="Placeholder Image 1" class="triple-images">
+            <img src="images/swim_images/actually-swim.jpg" alt="Placeholder Image 2" class="triple-images">
+            <img src="images/512pxIcon-sunset_photo_not_found.png" alt="Placeholder Image 3" class="triple-images">
+        </div>
+    </section>
+    
+
+    <h1 class="ice-breaker-title">General Seth Trivia/Icebreakers</h1>
+    <section class="ice-breaker">
+        
+        
+        <div class="question">
+            <h2>What is my favorite color?</h2>
+            <p>Easily purple. If you couldn't tell my favorite color was purple, you must be color blind.</p>
+        </div>
+        <div class="question">
+            <h2>What is my favorite food?</h2>
+            <p>It varies; some days I'm craving orange chicken, other days I really want pasta.</p>
+        </div>
+        <div class="question">
+            <h2>What is my favorite hobby?</h2>
+            <p>Video games, primarily single-player games such as Cult of the Lamb, Balatro, Ultrakill, etc.</p>
+        </div>
+        <div class="question">
+            <h2>What is my favorite animal?</h2>
+            <p>Chickens and cats, I actually have a flock of chickens and feed dozens of stray cats. </p>
+        </div>
+        <div class="question">
+            <h2>Do I collect anything?</h2>
+            <p>Plastic spoons. Not fancy spoon from around the world, but plastic spoons from cafeterias.</p>
+
+        </section>
+                <section class="skills">
+            <h1>Skills</h1>
+            <div class="skills-container">
+                <!-- Hard Skills -->
+                <div class="hard-skills">
+                    <h2>Hard Skills</h2>
+                    <div class="skill-box">
+                        <h3>HTML</h3>
+                        <p>Intermediate</p>
+                    </div>
+                    <div class="skill-box">
+                        <h3>CSS</h3>
+                        <p>Intermediate</p>
+                    </div>
+                    <div class="skill-box">
+                        <h3>JavaScript</h3>
+                        <p>Beginner</p>
+                    </div>
+                </div>
+        
+                <!-- Soft Skills -->
+                <div class="soft-skills">
+                    <h2>Soft Skills</h2>
+                    <div class="skill-box">
+                        <h3>Problem-Solving</h3>
+                        <p>Strong</p>
+                    </div>
+                    <div class="skill-box">
+                        <h3>Teamwork</h3>
+                        <p>Excellent</p>
+                    </div>
+                    <div class="skill-box">
+                        <h3>Leadership</h3>
+                        <p>Great</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="call-to-action">
+            <h1>Ready to Dive In?</h1>
+            <p>Explore my projects and see what I've been working on. Let's connect!</p>
+            <a href="contact.html" class="cta-button">Contact Me</a>
+        </section>
+
+   
+
+    <!--footer-->
+        <footer>
+        <div class="footer-top">
+            <img src="images/SW.png" alt="Seth Ward logo" id="logo">
+            <ul class="footer-contacts">
+                <li><a href="mailto:setward5281@gmail.com"><i class="fa-solid fa-envelope"></i></span> setward5281@gmail.com</a></li>
+                <li><i class="fa-solid fa-phone"></i> (385) 482 - 8004</li>
+                <li><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/seth-ward-1b0b4a1b5/" target="_blank"> LinkedIn (broken)</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Seth Ward | <a href="#attribution">Attribution</a> | <a href="#privacy_policy">Resources</a></p>
+        </div>
+    </footer>
+</body>  
+    
+
+</html>

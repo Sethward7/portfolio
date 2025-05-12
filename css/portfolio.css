@@ -1,0 +1,376 @@
+/* Basic styling for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3a0063; /* Dark purple */
+    position: sticky; /* Fixed position */
+    top: 0; /* Stick to the top of the viewport */
+    list-style: none;
+    margin: 0;
+    z-index: 1000; /* Ensure it stays above other elements */
+    list-style: none;
+    margin: 0;
+}
+
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #5f01a3; /* Lighter purple on hover */
+    border-radius: 5px;
+}
+
+.navbar .active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.navbar-icon {
+    width: 7rem; /* Adjusted width for smaller icons */
+    height: auto;
+    vertical-align: middle;
+    background-color: transparent; /* Transparent background for the icon */
+}
+/*dropdown menu styles*/
+.dropbutt{
+    text-decoration: none;
+    
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5f01a3; /* Lighter purple */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: quicksand, sans-serif;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    background-color: #3a0063; /* Darker purple */
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the dropdown button on hover */
+.dropdown:hover .dropbtn {
+    background-color: #5f01a3;
+}
+#light-mode-toggle {
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 1.5rem; /* Adjust font size */
+    color: white; /* White text color */
+    background-color: transparent; /* Transparent background */
+    border: none; /* Remove border */
+    padding: 0.5rem 1rem; /* Add padding for spacing */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+body {
+    font-family: quicksand, sans-serif; /* Centralized font-family */
+    background-color: #1b1122; /* very dark purple background */
+    margin: 0;
+    padding: 0;
+    color: white; /* Default text color */
+}
+
+/* Styling for the image and text container */
+.image-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    gap: 5rem; /* Space between the image and text */
+    text-decoration: none;
+}
+
+.profile-image {
+    width: 10%; /* Adjust size as needed */
+    height: auto;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for styling */
+}
+
+.text-box {
+    max-width: 600px;
+    
+}
+
+.text-box h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.text-box p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.image-container{
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    margin: 2rem; /* Add margin for spacing */
+    text-decoration: none; /* Remove underline from links */
+}
+.triple-images {
+    width: 10%; /* Adjust size as needed */
+    height: auto;
+    margin: 0 5%; /* Use margin for consistent spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for styling */
+}
+.about-me {
+    background-color: #001c57; /* Dark blue background */
+}
+.call-to-action {
+
+    padding: 2rem; /* Add padding for spacing */
+    text-align: center; /* Center the text */
+}
+.cta-button {
+    display: inline-block;
+    background-color: #5f01a3; /* Primary button color */
+    color: white; /* Text color */
+    padding: 0.75rem 1.5rem; /* Padding for size */
+    font-size: 1.2rem; /* Font size */
+    font-family: quicksand, sans-serif; /* Match site font */
+    text-decoration: none; /* Remove underline */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.cta-button:hover {
+    background-color: #3a0063; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+.ice-breaker {
+
+     /* White text */
+    padding: 2rem; /* Add padding for spacing */
+    text-align: center; /* Center the text */
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    grid-auto-rows: minmax(150px, auto); /* Auto height for rows */
+    gap: 2rem; /* Space between grid items */
+}
+.ice-breaker h1 {
+    grid-column: 1 /1;
+    margin-bottom: 1rem; /* Add spacing below the heading */
+}
+.ice-breaker .question {
+    background-color: #3a0063; /* Dark purple background */
+    padding: 1rem; /* Add padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for styling */
+    transition: transform 0.2s ease; /* Smooth hover effect */
+}
+.ice-breaker .question:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+.ice-breaker-title {
+    font-size: 2rem; /* Adjust font size for the title */
+    text-align: center; /* Center the title */
+}
+/* Skills section styles */
+.skills {
+    padding: 2rem;
+    text-align: center;
+    background-color: #001c57; /* Dark blue background */
+}
+.skills h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem; /* Add spacing below the heading */
+}
+
+.skills-container {
+    display: flex; /* Use flexbox to split into two halves */
+    justify-content: space-between; /* Add space between the two halves */
+    gap: 2rem; /* Add spacing between the columns */
+    flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
+}
+
+.hard-skills, .soft-skills {
+    flex: 1; /* Each column takes up equal space */
+    min-width: 300px; /* Ensure columns don't shrink too much */
+}
+
+.hard-skills h2, .soft-skills h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.skill-box {
+    background-color: #3a0063; /* Dark purple background */
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+.skill-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/*footer styles*/
+footer {
+    background-color: #3a0063; /* Dark purple background */
+     /* White text */
+    padding: 1rem 2rem; /* Add padding for spacing */
+}
+
+footer a {
+    color: white; /* White links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+footer a:hover {
+    color: #5f01a3; /* Lighter purple on hover */
+}
+
+/* Top section of the footer */
+.footer-top {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Vertically align items */
+    justify-content: flex-start; /* Align items to the left */
+    gap: 2rem; /* Add space between the logo and contacts */
+    margin-bottom: 1rem; /* Add spacing below the top section */
+}
+
+/* Footer logo */
+#logo {
+    width: 5%; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Footer contacts */
+.footer-contacts {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Display items in a row */
+    flex-direction: column; /* Stack items vertically */
+    gap: 0.5rem; /* Add spacing between contact items */
+}
+
+.footer-contacts li {
+    font-size: 1rem; /* Adjust font size */
+}
+
+/* Bottom section of the footer */
+.footer-bottom {
+    text-align: center; /* Center-align the text */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    margin-top: 1rem; /* Add spacing above the bottom section */
+}
+
+/* General light mode text color */
+body.light-mode {
+    background-color: #DDD5F3; /* Light background color */
+    color: #000000; /* Dark text color */
+}
+
+/* Navbar light mode styles */
+.navbar.light-mode {
+    background-color: #B19CD7; /* Light background color */
+    color: #000000; /* Dark text color */
+}
+.navbar.light-mode a {
+    color: #000000; /* Dark text for links */
+
+}
+body.light-mode#light-mode-toggle {
+    color: #000000; /* Dark text color for the toggle button */
+    
+}
+/* Change moon icon color in light mode */
+body.light-mode #light-mode-toggle i.fa-moon {
+    color: black; /* Set moon icon color to black */
+}
+
+/* About Me section light mode styles */
+.about-me.light-mode {
+    background-color: #C0AFE2; /* Light background color */
+    color: #000000; /* Dark text color */
+}
+
+/* Call-to-action section light mode styles */
+.call-to-action.light-mode {
+    color: #000000; /* Dark text color */
+}
+.ice-breaker-title.light-mode {
+    background-color: #C0AFE2; /* Light background color */
+}
+
+/* Ice-breaker section light mode styles */
+.ice-breaker.light-mode {
+    background-color: #C0AFE2; /* Light background color */
+    color: #000000; /* Dark text color */
+}
+/* Ensure light mode styles for .question elements */
+body.light-mode .ice-breaker .question {
+    background-color: #B19CD7; /* Light background color */
+    color: #000000; /* Dark text color */
+}
+/* Skills section light mode styles */
+.skills.light-mode {
+    background-color: #C0AFE2; /* Light background color */
+    color: #000000; /* Dark text color */
+}
+.light-mode .skill-box {
+    background-color: #B19CD7; /* Light background color */
+    color: #000000; /* Dark text color */
+}
+
+/* Footer light mode styles */
+footer.light-mode {
+    background-color: #B19CD7; /* Light background color */
+    color: #000000; /* Dark text color */
+}
+
+footer.light-mode a {
+    color: #000000; /* Dark text for links */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        padding: 0.5rem;
+    }
+}
