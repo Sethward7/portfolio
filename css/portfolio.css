@@ -363,6 +363,11 @@ footer.light-mode {
 footer.light-mode a {
     color: #000000; /* Dark text for links */
 }
+/*edge stlyes*/
+body.edge-browser {
+    filter: grayscale(100%); /* Example: Make the site grayscale */
+    pointer-events: none; /* Disable all interactions */
+}
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
