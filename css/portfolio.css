@@ -8,7 +8,7 @@
     top: 0; /* Stick to the top of the viewport */
     list-style: none;
     margin: 0;
-    z-index: 1000; /* Ensure it stays above other elements */
+    z-index: 100; /* Ensure it stays above other elements */
     list-style: none;
     margin: 0;
 }
@@ -37,6 +37,7 @@
     vertical-align: middle;
     background-color: transparent; /* Transparent background for the icon */
 }
+
 /*dropdown menu styles*/
 .dropbutt{
     text-decoration: none;
@@ -109,9 +110,16 @@ body {
 }
 
 .profile-image {
-    width: 10%; /* Adjust size as needed */
+    width: 15%; /* Adjust size as needed */
     height: auto;
 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for styling */
+}
+.profile-image2 {
+    width: 100%; /* Adjust size as needed */
+    height: auto;
+    max-width: 25%;
+    object-fit: contain;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for styling */
 }
 
@@ -135,12 +143,19 @@ body {
     align-items: center; /* Center the image vertically */
     margin: 2rem; /* Add margin for spacing */
     text-decoration: none; /* Remove underline from links */
+    padding-bottom: 5%; /* Add padding to the bottom */
 }
 .triple-images {
     width: 10%; /* Adjust size as needed */
     height: auto;
     margin: 0 5%; /* Use margin for consistent spacing */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for styling */
+}
+#swim-image.triple-images {
+    width: 100%; /* Adjust size as needed */
+    height: auto;
+    max-width: 25%;
+    object-fit: contain;
 }
 .about-me {
     background-color: #001c57; /* Dark blue background */
@@ -198,6 +213,10 @@ body {
     font-size: 2rem; /* Adjust font size for the title */
     text-align: center; /* Center the title */
 }
+
+
+
+
 /* Skills section styles */
 .skills {
     padding: 2rem;
@@ -241,12 +260,112 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
+/*about me page*/
+
+.hobbies {
+    text-align: center; /* Center the text */
+    padding-top: 1%;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    margin: 2rem; /* Add margin for spacing */
+    text-decoration: none; /* Remove underline from links */
+    padding-bottom: 1%; /* Add padding to the bottom */
+    background-color: #001c57; /* Dark blue background */
+}
+.hobbies h1 {
+    font-size: 2.5rem; /* Adjust font size for the title */
+    text-align: center; /* Center the title */
+}
+.hobbies p {
+    font-size: 1.2rem; /* Adjust font size for the paragraph */
+    line-height: 1.5; /* Line height for readability */
+    margin-bottom: 2rem; /* Add spacing below the paragraph */
+}
+.hobby-list {
+
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    margin: 2rem; /* Add margin for spacing */
+    list-style: none; /* Remove bullet points */
+
+}
+.hobby-list li {
+    display: inline-block; /* Display items in a row */
+    margin: 0 1rem; /* Add spacing between items */
+    text-align: center; /* Center the text */
+    background-color: #3a0063; /* Dark purple background */
+    padding: 1rem; /* Add padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for styling */
+    font-size: 1.2rem; /* Adjust font size */
+}
+.hobby-list a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+
+}
+.hobby-list li:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+
+.favorites {
+    text-align: center; /* Center the text */
+    padding-top: 1%;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    margin: 2rem; /* Add margin for spacing */
+    text-decoration: none; /* Remove underline from links */
+    padding-bottom: 1%; /* Add padding to the bottom */
+}
+.favorites h1 {
+    font-size: 2.5rem; /* Adjust font size for the title */
+    text-align: center; /* Center the title */
+}
+.favorites p {
+    font-size: 1.2rem; /* Adjust font size for the paragraph */
+    line-height: 1.5; /* Line height for readability */
+    margin-bottom: 2rem; /* Add spacing below the paragraph */
+}
+.favorites-list {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    margin: 2rem; /* Add margin for spacing */
+    text-decoration: none; /* Remove underline from links */
+    padding-bottom: 1%; /* Add padding to the bottom */
+}
+.favorites-list li {
+    display: inline-block; /* Display items in a row */
+    margin: 0 1rem; /* Add spacing between items */
+    text-align: center; /* Center the text */
+    background-color: #3a0063; /* Dark purple background */
+    padding: 1rem; /* Add padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for styling */
+    font-size: 1.2rem; /* Adjust font size */
+}
+.favorites-list li:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+/*
+I'm so tired man, i just want to sleep. The idea of slumber is so appealing to me right now.
+Call me someone who sleeps a lot, because I want to sleep a lot.
+The idea of sleeping is so appealing to me right now.
+This shouldn't be a part of the code, but I just want to sleep. IDC
+I just want to sleep. I want to sleep so bad. It 1:36 PM and I want to sleep. 
+But nooooooooo, I have to write this code.
+And this damn ai keeps wanting to write this section of comments and its kind of annoying.
+*/
+
 
 
 /*footer styles*/
 footer {
     background-color: #3a0063; /* Dark purple background */
-     /* White text */
+
     padding: 1rem 2rem; /* Add padding for spacing */
 }
 
@@ -296,6 +415,15 @@ footer a:hover {
     margin-top: 1rem; /* Add spacing above the bottom section */
 }
 
+
+
+
+
+
+
+
+
+/* Light mode styles */
 /* General light mode text color */
 body.light-mode {
     background-color: #DDD5F3; /* Light background color */
@@ -330,13 +458,11 @@ body.light-mode #light-mode-toggle i.fa-moon {
 .call-to-action.light-mode {
     color: #000000; /* Dark text color */
 }
-.ice-breaker-title.light-mode {
-    background-color: #C0AFE2; /* Light background color */
-}
+
 
 /* Ice-breaker section light mode styles */
 .ice-breaker.light-mode {
-    background-color: #C0AFE2; /* Light background color */
+   
     color: #000000; /* Dark text color */
 }
 /* Ensure light mode styles for .question elements */
@@ -349,18 +475,18 @@ body.light-mode .ice-breaker .question {
     background-color: #C0AFE2; /* Light background color */
     color: #000000; /* Dark text color */
 }
-.light-mode .skill-box {
+.light-mode .skills {
     background-color: #B19CD7; /* Light background color */
     color: #000000; /* Dark text color */
 }
 
 /* Footer light mode styles */
-footer.light-mode {
+body.light-mode footer {
     background-color: #B19CD7; /* Light background color */
     color: #000000; /* Dark text color */
 }
 
-footer.light-mode a {
+body.light-mode footer a  {
     color: #000000; /* Dark text for links */
 }
 /*edge stlyes*/
@@ -368,7 +494,6 @@ body.edge-browser {
     filter: grayscale(100%); /* Example: Make the site grayscale */
     pointer-events: none; /* Disable all interactions */
 }
-
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .navbar {
