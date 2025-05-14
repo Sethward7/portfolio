@@ -6,12 +6,13 @@
     <meta name="description" content="Seth Ward's Portfolio - showcasing projects and skills.">
     <meta name="keywords" content="Seth Ward, Portfolio, Projects, Skills, Web Development">
     <meta name="author" content="Seth Ward">
+    <link rel="icon" href="images/SW.png" type="image/png">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="js/portfolio.js"></script>
+    <script src="js/portfolio.js" defer></script>
     <title>Seth Ward's Portfolio</title>
     <style>
         
@@ -20,24 +21,24 @@
 <body>
      <!-- Navigation bar -->
      <ul class="navbar">
-        <li><a class="active" href="#index"><img src="images/SW.png" alt="Home Icon" class="navbar-icon"></a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="index.html"><img src="images/SW.png" alt="Seth Ward's logo" class="navbar-icon"></a></li>
+        <li><a href="pages/about.html">About</a></li>
         <li class="dropdown">
-            <a href="projects.html" class="dropbutt">Projects <i class="fa-solid fa-caret-down"></i></a>
+            <a href="pages/project.html" class="dropbutt">Projects <i class="fa-solid fa-caret-down"></i></a>
             <div class="dropdown-content">
                 <a href="swim.html" target="_blank">WJHS Swim Team </a>
                 <a href="fanpage.html" target="_blank">FanPage</a>
-                <a href="killer.html" target="_blank">Others</a>
+                <a href="pages/killer.html" target="_blank">Others</a>
 
             </div>
         </li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
         <li><button id="light-mode-toggle"><i class="fa-solid fa-sun fa-2xl"></i></button></li>
     </ul>
     <!-- Image and text section -->
      <section class="intro">
         <div class="image-text-container">
-            <img src="images/sethschoolpic.jpg" alt="Your Image" class="profile-image">
+            <img src="images/sethschoolpic.jpg" alt="A picture of me, Seth Ward" class="profile-image">
             <div class="text-box">
                 <h1>Welcome to Seth's Portfolio</h1>
                 <p>Hello! I'm Seth Ward, a student at The Jordan Academy for Technology &amp; Careers (JATC) and West Jordan High School (WJHS). This site is a place I will my past, present and future projects in all things web development.</p>
@@ -51,14 +52,14 @@
         
             <div class="text-box">
                 <h1>A Little Bit About Me</h1>
-                <p>My name is Seth Ward, and I've just started my web development journey. I am finishing up my last year in high school. I have plans to continue web development at Utah Valley Universty (UVU). I swam for four years in high school being the only four year in my graduating class.</p>
+                <p>My name is Seth Ward, and I've just started my web development journey. I am finishing up my last year in high school. I have plans to continue web development at Utah Valley University (UVU). I swam for four years in high school being the only four year in my graduating class.</p>
             </div>
-            <img src="images/512pxIcon-sunset_photo_not_found.png" alt="Your Image" class="profile-image">
+            <img src="images/swim_images/actually-swim.jpg" alt="Seth ward swimming" class="profile-image">
         </div>
         <div class ="image-container">
-            <img src="images/512pxIcon-sunset_photo_not_found.png" alt="Placeholder Image 1" class="triple-images">
-            <img src="images/swim_images/actually-swim.jpg" alt="Placeholder Image 2" class="triple-images">
-            <img src="images/512pxIcon-sunset_photo_not_found.png" alt="Placeholder Image 3" class="triple-images">
+            <img src="images/set-selfie.jpeg" alt="A selfie of Seth with sunglasses" class="triple-images">
+            <img src="images/set-thin.jpeg" alt="wide shot of Seth" class="triple-images" #id="swim-image">
+            <img src="images/set-cards.jpeg" alt="Seth holding Bicycle playing cards with a pokemon card in the middle" class="triple-images">
         </div>
     </section>
     
@@ -85,7 +86,7 @@
         </div>
         <div class="question">
             <h2>Do I collect anything?</h2>
-            <p>Plastic spoons. Not fancy spoon from around the world, but plastic spoons from cafeterias.</p>
+            <p>Plastic spoons. Not fancy spoons from around the world, but plastic spoons from cafeterias.</p>
 
         </section>
                 <section class="skills">
