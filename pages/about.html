@@ -15,13 +15,15 @@
     <script src="../js/portfolio.js" defer></script>
     <title>About Me</title>
     <style>
-        
+        #purp {
+            background-color: #7f00fe;
+        }
     </style>
 </head>
 <body>
     <!-- Navigation bar -->
     <ul class="navbar">
-        <li><a class="active" href="#index"><img src="../images/SW.png" alt="Seth Ward's logo" class="navbar-icon"></a></li>
+        <li><a class="active" href="../index.html"><img src="../images/SW.png" alt="Seth Ward's logo" class="navbar-icon"></a></li>
         <li><a href="about.html">About</a></li>
         <li class="dropdown">
             <a href="projects.html" class="dropbutt">Projects <i class="fa-solid fa-caret-down"></i></a>
@@ -34,8 +36,41 @@
         <li><a href="contact.html">Contact</a></li>
         <li><button id="light-mode-toggle"><i class="fa-solid fa-sun fa-2xl"></i></button></li>
     </ul>
-    <br>
 
+
+    <section class="personal-story">
+        <div class="image-text-container">
+            <img src="../images/set-wide.jpeg" alt="Seth ward swimming" class="profile-image2">
+            <div class="text-box">
+                <h1>My Journey</h1>
+                <p>My passion for web development started when I took the JATC web development course. 
+            Since then, I've enjoyed the expierence of playing with HTML, CSS, and JavaScript to build websites.
+            I would like to continuelearnimng and growing my skills in web development and hope to eventually master it.</p>
+            </div>
+            
+        </div>  
+    </section>
+    <section class="hobbies">
+        <h1>Outside of Work</h1>
+        <p>When I'm not coding, I enjoy:</p>
+        <ul class="hobby-list">
+            <a href="https://en.wikipedia.org/wiki/Swimming"><li>Swimming and staying active.</li></a>
+            <a href="https://en.wikipedia.org/wiki/Gadget"><li>Playing with new gadgets and gizmos.</li></a>
+            <a href="https://en.wikipedia.org/wiki/Video_game"><li>Playing video games and solving puzzles.</li></a>
+            <a href="https://en.wikipedia.org/wiki/Family"><li>Spending time with family and friends.</li></a>
+        </ul>
+    </section>
+        <section class="favorites">
+        <h1>My Favorite Things</h1>
+        <p>Each of these are my favorite:</p>
+        <ul class="favorites-list">
+            <li><strong>Book:</strong> "Projekt 1065" by Alan Gratz</li>
+            <li><strong>Movie:</strong> "The Prestige"</li>
+            <li><strong>Game:</strong> "Cult of the Lamb"</li>
+            <li><strong>Candy:</strong> Recee's</li>
+            <li id="purp"><strong>Color:</strong> #7f00ff</li>    
+        </ul>
+    </section>
 
 
     <!--footer-->
