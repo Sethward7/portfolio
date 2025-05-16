@@ -282,7 +282,8 @@ body {
     margin-bottom: 2rem; /* Add spacing below the paragraph */
 }
 .hobby-list {
-
+    margin-top: 20px; /* Add spacing above the list */
+    padding: 20px;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
     margin: 2rem; /* Add margin for spacing */
@@ -290,8 +291,11 @@ body {
 
 }
 .hobby-list li {
-    display: inline-block; /* Display items in a row */
-    margin: 0 1rem; /* Add spacing between items */
+    display: inline-block;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     text-align: center; /* Center the text */
     background-color: #3a0063; /* Dark purple background */
     padding: 1rem; /* Add padding for spacing */
@@ -345,6 +349,7 @@ body {
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for styling */
     font-size: 1.2rem; /* Adjust font size */
+    color: white; /* White text color */
 }
 .favorites-list li:hover {
     transform: scale(1.05); /* Slightly enlarge on hover */
@@ -358,8 +363,36 @@ This shouldn't be a part of the code, but I just want to sleep. IDC
 I just want to sleep. I want to sleep so bad. It 1:36 PM and I want to sleep. 
 But nooooooooo, I have to write this code.
 And this damn ai keeps wanting to write this section of comments and its kind of annoying.
+FUCK
+In like 10 minutes, I'll be sitting in my car waiting for my brother and his friend to come out to the car.
 */
+.interests {
+    text-align: center; /* Center the text */
+    padding-top: 1%;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    margin: 2rem; /* Add margin for spacing */
+    text-decoration: none; /* Remove underline from links */
+    padding-bottom: 1%; /* Add padding to the bottom */
+    background-color: #001c57; /* Dark blue background */
+}
+.interests h1 {
+    font-size: 2.5rem; /* Adjust font size for the title */
+    text-align: center; /* Center the title */
 
+}
+.random-fact {
+    background-color: #001c57; /* Dark purple background */
+    font-size: 1.2rem; /* Adjust font size for the paragraph */
+    line-height: 1.5; /* Line height for readability */
+    margin-bottom: 2rem; /* Add spacing below the paragraph */
+    text-align: center; /* Center the text */
+    padding: 2rem; /* Add padding for spacing */
+}
+.random-fact h1 {
+    font-size: 2.5rem; /* Adjust font size for the title */
+
+}
 
 
 /*footer styles*/
@@ -476,6 +509,18 @@ body.light-mode .ice-breaker .question {
     color: #000000; /* Dark text color */
 }
 .light-mode .skills {
+    background-color: #B19CD7; /* Light background color */
+    color: #000000; /* Dark text color */
+}
+.hobbies.light-mode {
+    background-color: #C0AFE2; /* Light background color */
+
+}
+.hobby-list.light-mode {
+    background-color: #C0AFE2; /* Light background color */
+}
+    
+body.hobby-list .light-mode li {
     background-color: #B19CD7; /* Light background color */
     color: #000000; /* Dark text color */
 }
