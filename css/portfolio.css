@@ -674,3 +674,61 @@ body.edge-browser {
         background: #fff;
     }
 }
+/* Responsive Styles for hero section */
+@media (max-width: 768px) {
+    .image-text-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image {
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .text-box {
+        text-align: center;
+    }
+}
+/* Responsive Styles for about me section */
+@media (max-width: 768px) {
+    .triple-images {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    #swim-image.triple-images {
+        max-width: 100%;
+    }
+}
+/* Responsive Styles for skills section */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hard-skills, .soft-skills {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Responsive Styles for projects section */
+@media (max-width: 768px) {
+    .project-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%;
+    }
+}
+/* 
+Some introspective comments:
+I enjoyed making this site, I feel like i grew and changed as a developer.
+The hardest part was that god damn light mode toggle. 
+Every single element had to be added to the light mode class and the javascript had to be updated to toggle the class on the body
+My favorite thing is the way the site intentiolly breaks when viewed in edge browser. Fuck you edge.
+*/
