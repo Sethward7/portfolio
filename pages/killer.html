@@ -1,21 +1,106 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-    <meta charset="UTF-8">  
-    <title>My Web Page</title>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seth Ward's Portfolio - showcasing projects and skills.">
+    <meta name="keywords" content="Seth Ward, Portfolio, Projects, Skills, Web Development">
+    <meta name="author" content="Seth Ward">
+    <link rel="icon" href="../images/SW.png" type="image/png">
+    <link rel="stylesheet" href="../css/portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="../js/portfolio.js" defer></script>
+    <title>Animations</title>
     <style>
-        .class{
-            text-align: center;
-            padding-top: 10%;
-        }
-    </style>
-</head>  
-<body>  
+      #intro {
+          text-align: center;
+          margin-top: 2rem;
+      }
+      #intro h1 {
+          font-size: 2.5rem;
+          margin-bottom: 1rem;
+      }
+      #intro p {
+          max-width: 800px;
+          margin: 0 auto;
+          font-size: 1.2rem;
+          line-height: 1.6;
+      }
 
-    <div class="class">   
-         <canvas id="purpleGuy" width="400" height="400"></canvas>
-    </div>
-    <canvas id="purpleGuy" width="400" height="400"></canvas>
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <ul class="navbar">
+        <li><a class="active" href="../index.html"><img src="../images/SW.png" alt="Seth Ward's logo" class="navbar-icon"></a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+            <a href="projects.html" class="dropbutt">Projects <i class="fa-solid fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="../swim-site/index.html" target="_blank">WJHS Swim Team </a>
+                <a href="fanpage.html" target="_blank">FanPage</a>
+                <a href="killer.html" target="_blank">Others</a>
+            </div>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><button id="light-mode-toggle"><i class="fa-solid fa-sun fa-2xl"></i></button></li>
+    </ul> 
+     <main>
+      <div id="intro">
+        
+      <h1>Animations</h1>
+      <p>Here are some of the animations I have made. They are all simple and fun little projects I made to practice my JavaScript and canvas skills and to see what I am capable of.</p>
+      </div>
+      <div class="card-container">
+        <!-- Animation Card -->
+        <div class="card">
+          <div class="ani-text-container">
+            <div class="canvas-container">
+              <canvas id="purpleGuy" width="300" height="400"></canvas>
+            </div>
+            <div class="text-box">
+              <h1>Purple Guy Animation</h1>
+              <p>
+                This is a simple animation of the purple guy from Five Nights at Freddy's.
+                It is a fun little project I made to practice my JavaScript and canvas skills and to see what I am capable of.
+                The animation is done using the HTML5 canvas element and JavaScript to manipulate the drawing on the canvas.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Empty Card for Future Animation 1 -->
+        <div class="card">
+          <div class="ani-text-container">
+            <div class="canvas-container">
+              <!-- Future canvas or image here -->
+            </div>
+            <div class="text-box">
+              <h1>Future Animation</h1>
+              <p>Coming soon...</p>
+            </div>
+          </div>
+        </div>
+        <!-- Empty Card for Future Animation 2 -->
+        <div class="card">
+          <div class="ani-text-container">
+            <div class="canvas-container">
+              <!-- Future canvas or image here -->
+            </div>
+            <div class="text-box">
+              <h1>Future Animation</h1>
+              <p>Coming soon...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+
+
     <script>
         const canvas = document.getElementById('purpleGuy')
         const context = canvas.getContext('2d');
@@ -104,5 +189,20 @@
 
         </script>
 
-</body>  
-</html>  
+    <!--footer-->
+    <footer>
+        <div class="footer-top">
+            <img src="../images/SW.png" alt="Seth Ward logo" id="logo">
+            <ul class="footer-contacts">
+                <li><a href="mailto:setward5281@gmail.com"><i class="fa-solid fa-envelope"></i></span> setward5281@gmail.com</a></li>
+                <li><a href="tel:13854828004"><i class="fa-solid fa-phone"></i> (385) 482 - 8004</a></li> 
+                <li><a href="https://www.linkedin.com/in/seth-ward-1b0b4a1b5/"  target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn (broken)</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Seth Ward | <a href="#attribution">Attribution</a> | <a href="#privacy_policy">Resources</a></p>
+        </div>
+    </footer>
+</body>
+</html>
+
