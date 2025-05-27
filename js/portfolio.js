@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 '.ice-breaker',
                 '.hobbies',
                 '.interests',
-
+                '.card',
                 'footer'
             ];
             selectors.forEach(sel => {
