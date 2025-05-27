@@ -1,16 +1,39 @@
-/* Basic styling for the navbar */
+html {
+    scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+a:focus, button:focus {
+    outline: 2px solid #ff438b;
+    outline-offset: 2px;
+}
+html, body {
+    height: 100%;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    flex: 1;
+}
+
+/* Navvigation Bar */
 .navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #3a0063; /* Dark purple */
-    position: sticky; /* Fixed position */
-    top: 0; /* Stick to the top of the viewport */
-    list-style: none;
+    background-color: #3a0063;
+    position: sticky;
+    top: 0;
     margin: 0;
-    z-index: 100; /* Ensure it stays above other elements */
+    z-index: 100;
     list-style: none;
-    margin: 0;
 }
 
 .navbar a {
@@ -23,7 +46,7 @@
 }
 
 .navbar a:hover {
-    background-color: #5f01a3; /* Lighter purple on hover */
+    background-color: #5f01a3;
     border-radius: 5px;
 }
 
@@ -32,16 +55,14 @@
     text-decoration: underline;
 }
 .navbar-icon {
-    width: 7rem; /* Adjusted width for smaller icons */
+    width: 7rem;
     height: auto;
     vertical-align: middle;
-    background-color: transparent; /* Transparent background for the icon */
+    background-color: transparent;
 }
-
-/*dropdown menu styles*/
+/*dropdown for projects*/
 .dropbutt{
     text-decoration: none;
-    
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
     transition: background-color 0.3s ease;
@@ -53,81 +74,73 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #5f01a3; /* Lighter purple */
+    background-color: #5f01a3;
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
-
 }
-/* Links inside the dropdown */
 .dropdown-content a {
     color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    font-family: quicksand, sans-serif;
+    
 }
-
-/* Change color on hover */
 .dropdown-content a:hover {
-    background-color: #3a0063; /* Darker purple */
+    background-color: #3a0063;
     border-radius: 0;
 }
-
-/* Show the dropdown on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-/* Style the dropdown button on hover */
 .dropdown:hover .dropbtn {
     background-color: #5f01a3;
 }
+/* Light Mode Toggle */
 #light-mode-toggle {
-    cursor: pointer; /* Change cursor to pointer */
-    font-size: 1.5rem; /* Adjust font size */
-    color: white; /* White text color */
-    background-color: transparent; /* Transparent background */
-    border: none; /* Remove border */
-    padding: 0.5rem 1rem; /* Add padding for spacing */
-    transition: background-color 0.3s ease; /* Smooth transition effect */
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
 }
-
+/*body*/
 body {
-    font-family: quicksand, sans-serif; /* Centralized font-family */
-    background-color: #1b1122; /* very dark purple background */
+    font-family: quicksand, sans-serif;
+    background-color: #1b1122;
     margin: 0;
     padding: 0;
-    color: white; /* Default text color */
+    color: white;
 }
-
-/* Styling for the image and text container */
+/*hero section*/
 .image-text-container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 2rem;
-    gap: 5rem; /* Space between the image and text */
+    gap: 5rem;
     text-decoration: none;
 }
 
-.profile-image {
-    width: 15%; /* Adjust size as needed */
-    height: auto;
 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for styling */
+.profile-image {
+    width: 15%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .profile-image2 {
-    width: 100%; /* Adjust size as needed */
+    width: 100%;
     height: auto;
     max-width: 25%;
     object-fit: contain;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for styling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .text-box {
+    margin: 0;
     max-width: 600px;
-    
 }
 
 .text-box h1 {
@@ -141,106 +154,102 @@ body {
 }
 
 .image-container{
-    display: flex; /* Use flexbox for alignment */
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
-    margin: 2rem; /* Add margin for spacing */
-    text-decoration: none; /* Remove underline from links */
-    padding-bottom: 5%; /* Add padding to the bottom */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    text-decoration: none;
+    padding-bottom: 5%;
 }
+/*about me section*/
 .triple-images {
-    width: 10%; /* Adjust size as needed */
+    width: 10%;
     height: auto;
-    margin: 0 5%; /* Use margin for consistent spacing */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for styling */
+    margin: 0 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 #swim-image.triple-images {
-    width: 100%; /* Adjust size as needed */
+    width: 100%;
     height: auto;
     max-width: 25%;
     object-fit: contain;
 }
 .about-me {
-    background-color: #001c57; /* Dark blue background */
+    background-color: #001c57;
 }
+/*call to action*/
 .call-to-action {
-
-    padding: 2rem; /* Add padding for spacing */
-    text-align: center; /* Center the text */
+    padding: 2rem;
+    text-align: center;
 }
 .cta-button {
     display: inline-block;
-    background-color: #5f01a3; /* Primary button color */
-    color: white; /* Text color */
-    padding: 0.75rem 1.5rem; /* Padding for size */
-    font-size: 1.2rem; /* Font size */
-    font-family: quicksand, sans-serif; /* Match site font */
-    text-decoration: none; /* Remove underline */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+    background-color: #5f01a3;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .cta-button:hover {
-    background-color: #3a0063; /* Darker shade on hover */
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+    background-color: #3a0063;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
+/*ice breakers for about me page*/
 .ice-breaker {
-
-     /* White text */
-    padding: 2rem; /* Add padding for spacing */
-    text-align: center; /* Center the text */
-    display: grid; /* Use grid layout */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
-    grid-auto-rows: minmax(150px, auto); /* Auto height for rows */
-    gap: 2rem; /* Space between grid items */
+    padding: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: minmax(150px, auto);
+    gap: 2rem;
 }
 .ice-breaker h1 {
     grid-column: 1 /1;
-    margin-bottom: 1rem; /* Add spacing below the heading */
+    margin-bottom: 1rem;
 }
 .ice-breaker .question {
-    background-color: #3a0063; /* Dark purple background */
-    padding: 1rem; /* Add padding for spacing */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for styling */
-    transition: transform 0.2s ease; /* Smooth hover effect */
+    background-color: #3a0063;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
 }
 .ice-breaker .question:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 .ice-breaker-title {
-    font-size: 2rem; /* Adjust font size for the title */
-    text-align: center; /* Center the title */
+    font-size: 2rem;
+    text-align: center;
 }
-
-
-
-
-/* Skills section styles */
+/*skills section*/
 .skills {
     padding: 2rem;
     text-align: center;
-    background-color: #001c57; /* Dark blue background */
+    background-color: #001c57;
 }
 .skills h1 {
     font-size: 2.5rem;
-    margin-bottom: 1rem; /* Add spacing below the heading */
+    margin-bottom: 1rem;
 }
 
 .skills-container {
-    display: flex; /* Use flexbox to split into two halves */
-    justify-content: space-between; /* Add space between the two halves */
-    gap: 2rem; /* Add spacing between the columns */
-    flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .hard-skills, .soft-skills {
-    flex: 1; /* Each column takes up equal space */
-    min-width: 300px; /* Ensure columns don't shrink too much */
+    flex: 1;
+    min-width: 300px;
 }
 
 .hard-skills h2, .soft-skills h2 {
@@ -249,7 +258,7 @@ body {
 }
 
 .skill-box {
-    background-color: #3a0063; /* Dark purple background */
+    background-color: #3a0063;
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -262,36 +271,34 @@ body {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
-
-/*about me page*/
-
+/*start of about me page*/
+/*hobbies section*/
 .hobbies {
-    text-align: center; /* Center the text */
+    text-align: center;
     padding-top: 1%;
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
-    margin: 2rem; /* Add margin for spacing */
-    text-decoration: none; /* Remove underline from links */
-    padding-bottom: 1%; /* Add padding to the bottom */
-    background-color: #001c57; /* Dark blue background */
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    text-decoration: none;
+    padding-bottom: 1%;
+    background-color: #001c57;
 }
 .hobbies h1 {
-    font-size: 2.5rem; /* Adjust font size for the title */
-    text-align: center; /* Center the title */
+    font-size: 2.5rem;
+    text-align: center;
 }
 .hobbies p {
-    font-size: 1.2rem; /* Adjust font size for the paragraph */
-    line-height: 1.5; /* Line height for readability */
-    margin-bottom: 2rem; /* Add spacing below the paragraph */
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
 }
 .hobby-list {
-    margin-top: 20px; /* Add spacing above the list */
+    margin-top: 20px;
     padding: 20px;
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
-    margin: 2rem; /* Add margin for spacing */
-    list-style: none; /* Remove bullet points */
-
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    list-style: none;
 }
 .hobby-list li {
     display: inline-block;
@@ -299,104 +306,92 @@ body {
     margin-bottom: 0.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    text-align: center; /* Center the text */
-    background-color: #3a0063; /* Dark purple background */
-    padding: 1rem; /* Add padding for spacing */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for styling */
-    font-size: 1.2rem; /* Adjust font size */
+    text-align: center;
+    background-color: #3a0063;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
     color: white;
 }
 .hobby-list a {
-    color: white; /* White text color */
-    text-decoration: none; /* Remove underline */
-
+    color: white;
+    text-decoration: none;
 }
 .hobby-list li:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
-
-
+/*favorites section*/
 .favorites {
-    text-align: center; /* Center the text */
+    text-align: center;
     padding-top: 1%;
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
-    margin: 2rem; /* Add margin for spacing */
-    text-decoration: none; /* Remove underline from links */
-    padding-bottom: 1%; /* Add padding to the bottom */
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    text-decoration: none;
+    padding-bottom: 1%;
 }
 .favorites h1 {
-    font-size: 2.5rem; /* Adjust font size for the title */
-    text-align: center; /* Center the title */
+    font-size: 2.5rem;
+    text-align: center;
 }
 .favorites p {
-    font-size: 1.2rem; /* Adjust font size for the paragraph */
-    line-height: 1.5; /* Line height for readability */
-    margin-bottom: 2rem; /* Add spacing below the paragraph */
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
 }
 .favorites-list {
-    display: flex; /* Use flexbox for alignment */
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
-    margin: 2rem; /* Add margin for spacing */
-    text-decoration: none; /* Remove underline from links */
-    padding-bottom: 1%; /* Add padding to the bottom */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    text-decoration: none;
+    padding-bottom: 1%;
 }
 .favorites-list li {
-    display: inline-block; /* Display items in a row */
-    margin: 0 1rem; /* Add spacing between items */
-    text-align: center; /* Center the text */
-    background-color: #3a0063; /* Dark purple background */
-    padding: 1rem; /* Add padding for spacing */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for styling */
-    font-size: 1.2rem; /* Adjust font size */
-    color: white; /* White text color */
+    display: inline-block;
+    margin: 0 1rem;
+    text-align: center;
+    background-color: #3a0063;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+    color: white;
 }
 .favorites-list li:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
-/*
-I'm so tired man, i just want to sleep. The idea of slumber is so appealing to me right now.
-Call me someone who sleeps a lot, because I want to sleep a lot.
-The idea of sleeping is so appealing to me right now.
-This shouldn't be a part of the code, but I just want to sleep. IDC
-I just want to sleep. I want to sleep so bad. It 1:36 PM and I want to sleep. 
-But nooooooooo, I have to write this code.
-And this damn ai keeps wanting to write this section of comments and its kind of annoying.
-FUCK
-In like 10 minutes, I'll be sitting in my car waiting for my brother and his friend to come out to the car.
-*/
+/*interests section*/
 .interests {
-    text-align: center; /* Center the text */
+    text-align: center;
     padding-top: 1%;
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
-    margin: 2rem; /* Add margin for spacing */
-    text-decoration: none; /* Remove underline from links */
-    padding-bottom: 1%; /* Add padding to the bottom */
-    background-color: #001c57; /* Dark blue background */
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    text-decoration: none;
+    padding-bottom: 1%;
+    background-color: #001c57;
 }
 .interests h1 {
-    font-size: 2.5rem; /* Adjust font size for the title */
-    text-align: center; /* Center the title */
-
+    font-size: 2.5rem;
+    text-align: center;
 }
+/*random fact section*/
 .random-fact {
-    background-color: #001c57; /* Dark purple background */
-    font-size: 1.2rem; /* Adjust font size for the paragraph */
-    line-height: 1.5; /* Line height for readability */
-    margin-bottom: 2rem; /* Add spacing below the paragraph */
-    text-align: center; /* Center the text */
-    padding: 2rem; /* Add padding for spacing */
+    background-color: #001c57;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 2rem;
 }
 .random-fact h1 {
-    font-size: 2.5rem; /* Adjust font size for the title */
-
+    font-size: 2.5rem;
 }
+/*start of projects page*/
 .projects {
     background-color: #001c57;
     padding: 3%;
@@ -444,9 +439,10 @@ In like 10 minutes, I'll be sitting in my car waiting for my brother and his fri
 .project-info p {
     margin: 0;
     font-size: 1rem;
-
 }
+/*contact page*/
 .contact-section {
+    width: 100%;
     max-width: 500px;
     margin: 2rem auto;
     padding: 2rem;
@@ -497,129 +493,130 @@ In like 10 minutes, I'll be sitting in my car waiting for my brother and his fri
     gap: 2rem;
     justify-content: center;
 }
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
 
-/*footer styles*/
+.card {
+    background: #001c57;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    padding: 2rem;
+    margin: 1rem 0;
+    min-width: 350px;
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+.ani-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    gap: 1rem; /* Changed from 0 to 1rem */
+    text-decoration: none;
+}
+/*footer*/
 footer {
-    background-color: #3a0063; /* Dark purple background */
-
-    padding: 1rem 2rem; /* Add padding for spacing */
+    background-color: #3a0063;
+    padding: 1rem 2rem;
 }
 
 footer a {
-    color: white; /* White links */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s ease; /* Smooth hover effect */
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: #5f01a3; /* Lighter purple on hover */
+    color: #5f01a3;
 }
 
-/* Top section of the footer */
 .footer-top {
-    display: flex; /* Use flexbox for horizontal alignment */
-    align-items: center; /* Vertically align items */
-    justify-content: flex-start; /* Align items to the left */
-    gap: 2rem; /* Add space between the logo and contacts */
-    margin-bottom: 1rem; /* Add spacing below the top section */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-bottom: 1rem;
 }
 
-/* Footer logo */
 #logo {
-    width: 5%; /* Adjust size as needed */
+    width: 5%;
     height: auto;
 }
 
-/* Footer contacts */
 .footer-contacts {
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
-    display: flex; /* Display items in a row */
-    flex-direction: column; /* Stack items vertically */
-    gap: 0.5rem; /* Add spacing between contact items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .footer-contacts li {
-    font-size: 1rem; /* Adjust font size */
+    font-size: 1rem;
 }
 
-/* Bottom section of the footer */
 .footer-bottom {
-    text-align: center; /* Center-align the text */
-    font-size: 0.9rem; /* Slightly smaller font size */
-    margin-top: 1rem; /* Add spacing above the bottom section */
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 1rem;
 }
-
-
-
-
-
-
-
-
-
-/* Light mode styles */
-/* General light mode text color */
+/*light mode styles*/
 body.light-mode {
-    background-color: #DDD5F3; /* Light background color */
-    color: #000000; /* Dark text color */
+    background-color: #DDD5F3;
+    color: #000000;
 }
 
-/* Navbar light mode styles */
 .navbar.light-mode {
-    background-color: #B19CD7; /* Light background color */
-    color: #000000; /* Dark text color */
+    background-color: #B19CD7;
+    color: #000000;
 }
 .navbar.light-mode a {
-    color: #000000; /* Dark text for links */
-
+    color: #000000;
 }
 body.light-mode#light-mode-toggle {
-    color: #000000; /* Dark text color for the toggle button */
-    
+    color: #000000;
 }
-/* Change moon icon color in light mode */
 body.light-mode #light-mode-toggle i.fa-moon {
-    color: black; /* Set moon icon color to black */
+    color: black;
 }
-
-/* About Me section light mode styles */
 .about-me.light-mode {
-    background-color: #C0AFE2; /* Light background color */
-    color: #000000; /* Dark text color */
+    background-color: #C0AFE2;
+    color: #000000;
 }
-
-/* Call-to-action section light mode styles */
 .call-to-action.light-mode {
-    color: #000000; /* Dark text color */
+    color: #000000;
 }
-
-
-/* Ice-breaker section light mode styles */
 .ice-breaker.light-mode {
-   
-    color: #000000; /* Dark text color */
+    color: #000000;
 }
-/* Ensure light mode styles for .question elements */
 body.light-mode .ice-breaker .question {
-    background-color: #B19CD7; /* Light background color */
-    color: #000000; /* Dark text color */
+    background-color: #B19CD7;
+    color: #000000;
 }
-/* Skills section light mode styles */
 .skills.light-mode {
-    background-color: #C0AFE2; /* Light background color */
-    color: #000000; /* Dark text color */
+    background-color: #C0AFE2;
+    color: #000000;
 }
 .light-mode .skills {
-    background-color: #B19CD7; /* Light background color */
-    color: #000000; /* Dark text color */
+    background-color: #B19CD7;
+    color: #000000;
 }
 .hobbies.light-mode {
-    background-color: #C0AFE2; /* Light background color */
-
+    background-color: #C0AFE2;
 }
-
 body.light-mode .interests {
     background-color: #C0AFE2;
     color: #000000;
@@ -630,28 +627,27 @@ body.light-mode .random-fact {
 }
 body.light-mode .projects{
     background-color: #C0AFE2;
-
 }
 body.light-mode .projects h1 {
     color: #000000;
 }
 
-
-/* Footer light mode styles */
+.light-mode .card {
+    background-color: #B19CD7;
+    color: #000000;
+}
 body.light-mode footer {
-    background-color: #B19CD7; /* Light background color */
-    color: #000000; /* Dark text color */
+    background-color: #B19CD7;
+    color: #000000;
 }
-
 body.light-mode footer a  {
-    color: #000000; /* Dark text for links */
+    color: #000000;
 }
-/*edge stlyes*/
 body.edge-browser {
-    filter: grayscale(100%); /* Example: Make the site grayscale */
-    pointer-events: none; /* Disable all interactions */
+    filter: grayscale(100%);
+    pointer-events: none;
 }
-/* Responsive design for smaller screens */
+/* Responsive Styles for navbar*/
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -659,5 +655,22 @@ body.edge-browser {
 
     .navbar a {
         padding: 0.5rem;
+    }
+        .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    #logo {
+        width: 30%;
+    }
+}
+@media print {
+    nav, .navbar, footer {
+        display: none;
+    }
+    body {
+        color: #000;
+        background: #fff;
     }
 }
